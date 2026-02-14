@@ -4,5 +4,10 @@
 	let { children } = $props();
 </script>
 
+<svelte:head>
+  <title>Jon's Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</svelte:head>
+
 <Navbar />
 {@render children()}
