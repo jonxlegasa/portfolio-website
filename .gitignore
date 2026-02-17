@@ -1,3 +1,6 @@
+# Beads issue tracker
+.beads/
+
 # SvelteKit
 .svelte-kit/
 build/
