@@ -7,19 +7,9 @@ tags:
   - personal
 ---
 
-Welcome to my blog! I'm Jon, a mathematics major and full-stack developer. This is where I'll share thoughts on math, computer science, AI/ML, and whatever else catches my interest.
+# Welcome
 
-## What to Expect
+It has been a long time coming for me to setup my own portfolio website. Here, I will list my projects (soon to come personal LLM assistant for people to chat about my projects with) & also blog posts about concepts I find interesting.
 
-I plan to write about:
 
-- **Mathematics** — PDEs, dynamical systems, and the beauty of abstract algebra
-- **AI/ML** — multi-agent systems, LLMs, and practical applications
-- **Full-stack development** — SvelteKit, Go, Python, and building real things
-- **Random explorations** — history, philosophy, game dev, and Minecraft servers
-
-## Why a Blog?
-
-Writing forces clarity. If I can explain something well enough to put it in a post, I probably understand it. And if I don't, the writing process helps me get there.
-
-Stay tuned for more.
+This is just the hello world blog. More interesting thoughts to come!
