@@ -8,6 +8,10 @@ export default {
 
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"JetBrains Mono"', 'monospace'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
       colors: {
         // Atom One Dark — backgrounds
         'primary-bg': '#282c34',
