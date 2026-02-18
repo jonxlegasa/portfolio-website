@@ -104,6 +104,21 @@ const ALL_REPOS_QUERY = `
   }
 `;
 
+// --- In-memory cache for GitHub API responses ---
+let cachedRepos: Repo[] | null = null;
+let cacheTimestamp = 0;
+const CACHE_TTL = 15 * 60 * 1000; // 15 minutes
+
+export async function fetchAllReposCached(token: string): Promise<Repo[]> {
+  const now = Date.now();
+  if (cachedRepos && now - cacheTimestamp < CACHE_TTL) {
+    return cachedRepos;
+  }
+  cachedRepos = await fetchAllRepos(token);
+  cacheTimestamp = now;
+  return cachedRepos;
+}
+
 export async function fetchAllRepos(token: string): Promise<Repo[]> {
   if (!token) {
     console.warn('GITHUB_TOKEN not set — cannot fetch repos');

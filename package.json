@@ -37,5 +37,9 @@
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint ."
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "baseline-browser-mapping": "^2.9.19",
+    "caniuse-lite": "^1.0.30001770"
+  }
 }
