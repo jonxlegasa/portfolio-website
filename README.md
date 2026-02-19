@@ -44,6 +44,9 @@ A `GITHUB_TOKEN` (classic, with `read:user` scope) is required to fetch GitHub r
 GITHUB_TOKEN=ghp_...
 ```
 
+## TODO
+- [ ] Portfolio chatbot
+
 ## License
 
 MIT
