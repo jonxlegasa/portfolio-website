@@ -97,7 +97,6 @@ const ALL_REPOS_QUERY = `
               name
             }
           }
-          isFork
         }
       }
     }
@@ -142,14 +141,12 @@ export async function fetchAllRepos(token: string): Promise<Repo[]> {
   const json = await res.json();
   const nodes = json.data?.user?.repositories?.nodes ?? [];
 
-  return nodes
-    .filter((repo: any) => !repo.isFork)
-    .map((repo: any) => ({
-      name: repo.name,
-      description: repo.description,
-      url: repo.url,
-      languages: (repo.languages?.nodes ?? []).map((l: any) => l.name),
-    }));
+  return nodes.map((repo: any) => ({
+    name: repo.name,
+    description: repo.description,
+    url: repo.url,
+    languages: (repo.languages?.nodes ?? []).map((l: any) => l.name),
+  }));
 }
 
 export async function fetchPinnedRepos(token: string): Promise<PinnedRepo[]> {
